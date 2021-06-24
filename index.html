@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Architect - de//space</title>
+		<meta property="og:title" content="Using the Architect template" />
+		<meta property="og:url" content="//despace.design/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="de//space - decide | design | deploy: Gannett's media innovation team">
+	  <meta name="keywords" content="design,innovation,news,gannett,media">
+	  <meta name="author" content="Gannett Co., Inc.">
+		<meta property="og:description" content="An easy-to-use, WordPress-based tool for storytelling" />
+		<meta property="og:image" content="despace-meta.png" />
+		<link rel="stylesheet" href="site_former.css">
+
+		<!--[if IE]>
+			<script src="//unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+		<![endif]-->
+	 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Adamina|Abril+Fatface|Roboto:100,200,300,400,500,700" rel="stylesheet">
+	 	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
+		 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116885662-1"></script>
+	 	<style>.async-hide { opacity: 0 !important} </style>
+		<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+		})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-N6WXC4T':true});</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-116885662-1', 'auto');
+		  ga('require', 'GTM-N6WXC4T');
+		  ga('send', 'pageview');
+		</script>
+
+		<style media="screen">
+
+			@font-face {
+				font-family: 'Unify Sans';
+				font-weight: normal;
+				src:url('UnifySans_A_Rg.ttf');
+			}
+
+			@font-face {
+				font-family: 'Unify Sans';
+				font-weight: bold;
+				src:url('UnifySans_Bd.ttf');
+			}
+
+			.arch-nav, .arch-nav2 {
+				transition-duration: 1s;
+
+			}
+
+			body {
+				font-family: 'Unify Sans', sans-serif!important;
+			}
+
+			.architect-body, .leadin h3, .arch-nav a, .arch-nav2 a {
+				margin-top: 0;
+				font-family: 'Unify Sans', sans-serif;
+				color: #404040;
+			}
+
+			.arch-nav a:hover, .arch-nav2 a:hover {
+				color: #009BFF;
+			}
+
+			.arch-nav {
+				padding-left: 0;
+				list-style: none;
+			}
+
+			.arch-nav li a.architect-section {
+				display: inline;
+			}
+
+			.architect-body strong {
+				font-weight: bold;
+			}
+			.architect-body > * {
+				width: 60%;
+			}
+
+			.architect-body > table {
+				width: 100%;
+				table-layout: unset;
+			}
+
+			.arch-vid {
+				height: 400px;
+				padding-bottom: 0;
+			}
+
+			@media (max-width: 1024px) {
+				.architect-body > * {
+					width: 90%;
+				}
+			}
+
+			@media (max-width: 768px) {
+				.architect-body > .embed-container, .architect-body > table {
+					width: 100%;
+				}
+			}
+
+			@media (max-width: 500px) {
+
+				.architect-body > table, tr, tbody {
+					max-width: 330px;
+				}
+
+				td {
+					max-width: 320px;
+				}
+
+				.architect-logo {
+					width: 106%;
+					margin-left: -6%;
+				}
+			}
+
+			p {
+				margin-bottom: 20px;
+				font-size: 1.1rem;
+				line-height: 1.5;
+				letter-spacing: -.5px;
+				word-spacing: 2px;
+				color: #404040;
+			}
+
+			p.checklist, #examples p  {
+				margin-bottom: 0;
+			}
+
+			.checklist-wrap {
+				margin-bottom: 30px;
+			}
+
+			.examples-wrap {
+				margin-top: 20px;
+			}
+
+			.examples-wrap p {
+				margin: 0;
+			}
+
+			td[data-label="Name"] {
+				width: 200px;
+			}
+
+			td[data-label="Description"] {
+				width: 500px;
+			}
+
+			#section-anchor {
+				padding-top: 150px;
+			}
+
+			.end {
+				margin-top: 100px;
+			}
+
+			#top-leadin {
+				padding-top: 100px;
+			}
+
+			.architect-logo {
+				margin-top: 0;
+				margin-bottom: 50px;
+			}
+
+			.arch-nav2 {
+				position: fixed;
+				top: 112px;
+				width: 100%;
+				background-color: #FFF;
+				z-index: 11;
+				padding: 10px 0 10px 0;
+				border-top: 2px solid #009BFF;
+				opacity: 0;
+			}
+
+			.arch-nav2 div {
+				width: 70%;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+
+			@media (max-width: 1100px) {
+				.arch-nav2 div {
+					width: 80%;
+				}
+			}
+
+			@media (max-width:425px) {
+				.arch-nav2 {
+					display: none;
+				}
+			}
+
+			.arch-nav2 div a {
+				font-size: .9rem;
+				font-weight: bold;
+				text-decoration: none;
+				transition-duration: .5s;
+				border-bottom: 3px solid transparent;
+			}
+			@media (min-width: 500px) {
+				.despace-nav.arch-page {
+					display: flex;
+					align-items: center;
+				}
+
+				.despace-nav.arch-page a {
+					text-align: right;
+					padding-right: 0;
+				}
+
+			}
+
+			img.plus {
+				width: 20px;
+				margin: 0 3px;
+			}
+
+			.architect-body a {
+				color: #009BFF;
+			}
+
+			.sitename {
+				color: #0A32A0;
+				font-weight: bold;
+			}
+
+			.architect-body em {
+				font-size: .9rem;
+			}
+
+			#examples{
+			margin-bottom: 50px;
+			}
+
+			.basicURL {
+				padding: 2%;
+			}
+
+			.ads-break {
+				background-color: #009BFF;
+				color: white;
+				font-weight: bold;
+			}
+
+			.block-head tr th {
+				position: sticky;
+				top: 157px;
+				background-color: #ccc;
+			}
+			.despace-logo {
+				min-width: 307px;
+			}
+			.example-piece {
+				margin-bottom: 20px;
+			}
+
+			.indepth-popup {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.6);
+				top: 0%;
+				left: 0%;
+				z-index: 3000;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.indepth-alert {
+				width: 50%;
+				height:auto;
+				border-radius: 25px;
+				background-color: #fff;
+				box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+				padding: 3%;
+
+			}
+
+			.buttons {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-direction: row;
+				width: 100%;
+				margin-top: 40px;
+			}
+
+			.buttons div, .buttons a {
+				border: 1px solid;
+				width: 45%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 50px;
+				border-radius: 10px;
+				color: #404040;
+				text-decoration: none;
+				cursor: pointer;
+				transition-duration: .3s;
+			}
+
+			.buttons div:hover, .buttons a:hover {
+				background-color: #009bff;
+				color: #fff;
+				border-color: #000;
+			}
+
+			@media screen and (max-width: 425px) {
+				.indepth-popup {
+
+				}
+				.indepth-alert {
+					top: 0;
+					left: 0;
+					width: 90%;
+				}
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<nav class="despace-nav arch-page">
+			<div id="logo-mobile">
+				<img class="despace-logo" src="../assets2/despace-small.svg"><img class="arrow-down" src="../assets2/arrow-down.svg">
+			</div>
+			<img class="despace-logo" id="logo-desktop" src="https://despace.design/assets2/despace-final.svg">
+			<ul>
+				<a class="nav-item" href="../index.html">About</a>
+	<!-- 			<a class="nav-item" href="../collaborate.html">Collaborate</a>-->
+				<a class="active-link" href="#top-leadin">Architect</a>
+			<!--	<a class="nav-item" href="../contact.html">Contact</a> -->
+			</ul>
+		</nav>
+		<div class="arch-nav2">
+			<div>
+				<a href="#before" id="before2" class="architect-section">Before you begin</a>
+				<a href="#examples" id="examples2" class="architect-section">Examples</a>
+				<a href="#quickStart" id="quickStart2" class="architect-section">Quick start guide</a>
+				<a href="#blocks" id="blocks2" class="architect-section">Block descriptions</a>
+				<a href="#publishing" id="publishing2" class="architect-section">Publishing</a>
+				<a href="#faq" id="faq2" class="architect-section">FAQ</a>
+			</div>
+		</div>
+
+		<div class="leadin" id="top-leadin">
+			<img class="architect-logo" src="screenshot.png">
+			<ul class="arch-nav">
+				<li><a href="#before" class="architect-section">Before you begin</a></li>
+				<li><a href="#examples" class="architect-section">Examples</a></li>
+				<li><a href="#quickStart" class="architect-section">Quick start guide</a></li>
+				<li><a href="#blocks" class="architect-section">Block descriptions</a></li>
+				<li><a href="#publishing" class="architect-section">Publishing</a></li>
+				<li><a href="#faq" class="architect-section">FAQ</a></li>
+			</ul>
+		</div>
+
+		<div class="leadin architect-body" id="before">
+			<h3>What is Architect?</h3>
+			<p>Architect is a WordPress-based longform template developed by de//space to help tell your important journalism in a more impactful way.</p>
+			<p>It is not for your everyday story, your Sunday package or just because a story happens to have really good photos. This is for your #journalismwithimpact &mdash; your special investigative and enterprise pieces, in-depth features and multi-part series. About 100 stories have been told using the Architect platform, and we hope you&apos;ll be next.</p>
+			<p>With that, there are a few things you need to know before getting started:</p>
+
+				<div class="checklist-wrap">
+					<p class="checklist"><i class="far fa-check-square"></i> You must plan for this well in advance. You will need to know the structure of your story and have a firm grasp of all of the visual elements at least three weeks before publication and before you request use of the template.</p>
+					<p class="checklist"><i class="far fa-check-square"></i> Someone on your staff should have working knowledge of WordPress or a similar CMS. Your team will build the story in WordPress.</p>
+					<p class="checklist"><i class="far fa-check-square"></i> Read through the documentation below to understand how the template is built.</p>
+					<p class="checklist"><i class="far fa-check-square"></i> Take a look at the <a href="#examples">examples</a> to see how others have been using Architect.</p>
+				</div>
+			<p class="body-bold">When you're ready, fill out this form to request a site set-up:</p>
+			<div class='embed-container'><iframe src='https://docs.google.com/forms/d/e/1FAIpQLSfIpjhqD8vAZyEc5PGmpbFcboCinnaYxTb-KOaOwVxQ33o9wQ/viewform?embedded=true' frameborder='0' marginheight='0' marginwidth='0'>Loading...</iframe></div>
+			<p><a class="italic" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfIpjhqD8vAZyEc5PGmpbFcboCinnaYxTb-KOaOwVxQ33o9wQ/viewform?usp=sf_link">View this form in a new window</a></p>
+
+		</div>
+
+		<div class="leadin architect-body" id="examples">
+			<h3>Examples</h3>
+			<p>We&apos;re excited for our newsrooms to start using the latest version of Architect, known simply as Architect 2. Here are a few examples of projects created in the new version.</p>
+
+			<div class="examples-wrap">
+
+				<div class="example-piece">
+					<p><strong>Columbus Dispatch</strong> <span class="ex-location">Columbus, Ohio</span></p>
+					<p><a href="https://stories.usatodaynetwork.com/seedsofdespair/home/site/dispatch.com" target="_blank">Seeds of Despair</a></p>
+				</div>
+
+				<div class="example-piece">
+				<p><strong>Austin360</strong> <span class="ex-location">Austin, Texas</span></p>
+				<p><a href="https://stories.usatodaynetwork.com/sxsw-event-status/home/site/austin360.com" target="_blank">10 Days Without SXSW</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>Erie Times-News</strong> <span class="ex-location">Erie, Pennsylvania</span></p>
+					<p><a target="_blank" href="https://stories.usatodaynetwork.com/cattlemen/home/site/goerie.com">Cattle Culture</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>Register Guard</strong> <span class="ex-location">Eugene, Oregon</span></p>
+					<p><a href="https://stories.usatodaynetwork.com/loggerevolution/home/site/registerguard.com" target="_blank">Logger Evolution</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>Daytona Beach News-Journal</strong> <span class="ex-location">Daytona Beach, Florida</span></p>
+					<p><a href="https://stories.usatodaynetwork.com/showtime/home/site/news-journalonline.com" target="_blank">Showtime</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>The Fayetteville Observer</strong> <span class="ex-location">Fayetteville, North Carolina</span></p>
+					<p><a href="https://stories.usatodaynetwork.com/jeffreymacdonald/themacdonaldmurders/site/fayobserver.com/" target="_blank">Fort Bragg Murder Case Intrigues 50 Years Later</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>Austin American-Statesman</strong> <span class="ex-location">Austin, Texas</span></p>
+					<p><a target="_blank" href="https://gatehousenews.com/a-world-rocked/home/site/statesman.com">A World Rocked</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>Texas Investigation Team</strong> <span class="ex-location">Texas Region</span></p>
+					<p><a target="_blank" href="http://stories.usatodaynetwork.com/hostagetoheat/texas-heat-summer-temperatures-electricity-power-cut-of/site/statesman.com">Hostage to Heat</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>Columbus Dispatch</strong> <span class="ex-location">Columbus, Ohio</span></p>
+					<p><a target="_blank" href="https://stories.usatodaynetwork.com/brokenpledge/home/site/dispatch.com">Broken Pledge</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>The Oklahoman</strong> <span class="ex-location">Oklahoma City, Oklahoma</span></p>
+					<p><a target="_blank" href="https://gatehousenews.com/unaccountable">Unaccountable</a></p>
+				</div>
+
+				<div class="example-piece">
+					<p><strong>USA TODAY Network</strong></p>
+					<p><a target="_blank" href="https://gatehousenews.com/torn-apart/sally-smith/site/gatehousenews.com/">Torn Apart</a></p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="leadin architect-body" id="quickStart">
+
+			<h3>Quick start guide</h3>
+
+			<p class="body-bold">Quick start video</p>
+			<p>This video will give you an overview on how to use Architect. The instructions are also written below.</p>
+			<div class="embed-container arch-vid"><iframe src='https://www.youtube.com/embed/X0WeXPwzrIA' frameborder="0" allowfullscreen></iframe></div>
+			<hr>
+
+			<p class="body-bold">Step one: Accessing the WordPress dashboard and editor</p>
+			<p>You will access the WordPress site editor by going to http://stories.usatodaynetwork.com/<span class="sitename">yoursitename</span>/wp-admin</p>
+
+			<p>The value of <span class="sitename">yoursitename</span> is the name of the site you requested when submitting the setup form.</p>
+
+			<p>Login with either your existing WordPress credentials (if you’ve built with Architect before) or the ones provided in your confirmation email from de//space.</p>
+
+			<p>You will see the WordPress dashboard once you've logged in. On the left, click on ‘Pages’ and then click the ‘Home’ page to begin building your site.</p>
+
+			<img src="../assets2/editor.png" />
+
+			<p class="body-bold">Step two: adding blocks</p>
+
+			<p>You should now see the WordPress Gutenberg editor (above).</p>
+
+			<p>The Gutenberg editor uses a series of blocks to build out your page with each block serving as a row. There are different blocks for different types of content, which are <a href="#widgets">described in the table below</a>.</p>
+
+			<p>For purposes of this quick start, lets first add a hero block, as this is often the first content on the page. There are three ways to add a block:</p>
+
+			<ol>
+				<li>You can click the <img class="plus" src="../assets2/plus.png" /> in the top left corner of the editor to see a dropdown list of all available blocks. To add a hero, click the <img class="plus" src="../assets2/plus.png" />, then open the ‘Architect Blocks’ dropdown, then click ‘Architect Hero.’</li>
+				<li>Hover over the words ‘Start writing or type / to choose a block,’ then click on the <img class="plus" src="../assets2/plus.png" /> to the left of the text to open the blocks list. Click ‘Architect Blocks’ then ‘Architect Hero.’</li>
+				<li>Click on the words ‘Start writing or type / to choose a block,’ then type ‘/’ and begin typing either ‘hero’ or ‘architect hero’. Either click on ‘Architect Hero’ as it appears in the dropdown or hit enter/return on your keyboard when it’s the top block in the list. You can also use your arrow keys to select blocks lower in the list. </li>
+			</ol>
+
+			<img src="../assets2/add-block.jpg" />
+
+			<p>Once you’ve added the hero block, you should see a button with the text ‘Pick an image’ has been placed in the editor. Click this button to open the Media Library and File Uploader and choose an image you’ve previously uploaded to this site or upload a new file from your computer. The selected image is now added to the editor. </p>
+
+			<p>The caption (often stored in the image metadata by the photographer) is automatically imported as well and displays below the hero image. You can edit this caption by editing the ‘caption’ section of the image data in the media library (in the WordPress admin sidebar under ‘Media’) . <strong>If you edit the caption, you must replace that image in the block for the edit to appear.</strong> Editing the caption in WordPress does not affect the image metadata.</p>
+
+			<p>You can show or hide the editor’s sidebar controls by clicking the gear icon in the top right of the screen. There are several customization options in the hero’s sidebar. You can toggle the appearance of the image caption or the image credit, edit the photographer’s name and publication, and choose white or black for the hero text color.</p>
+
+			<p>Let’s add headline and a small intro sentence to the hero. On top of the image you should see the words ‘HEADLINE’ and ‘intro text’. Click either of those to begin editing the text in those areas. You will see roughly how the text will appear on the user end &mdash; the hero block has the text centered on top of the image. I've changed the hero text to white (using the options in the sidebar) to make the text appear better on top of this image.</p>
+
+			<img src="../assets2/add-headline.png" />
+
+			<p>Once you’ve added your image, text and customizations to the hero, click the blue ‘Update’ button in the top right of the screen. Click ‘View Page’ to see the public-facing version of the site.</p>
+
+			<p>Repeat this process with other blocks, which you can learn more about <a href="#widgets">below</a>.</p>
+
+			<p class="body-bold">Step three: edits in the customizer</p>
+
+			<p>Use the customizer to edit site-wide components of your project. In the admin sidebar, hover over ‘Appearance’ and click ‘Customize’.</p>
+
+			<p><strong>Architect Styles:</strong></p>
+			<p>Architect 2 introduces five distinct styles you can use to tell your stories.</p>
+
+			<ul>
+				<li>Classic: great for enterprise investigations</li>
+				<li>Bold: strong, modern look for features</li>
+				<li>Dark: dark gray background with light text</li>
+				<li>Cool: dark blue background with light text and teal accents</li>
+				<li>Warm: soft beige background with red accents</li>
+			</ul>
+
+			<img src="../assets2/styles.png" />
+
+			<p>To switch between these styles, select ‘Architect Styles’ in the customizer and choose a style from the dropdown. Your content will automatically restyle according to your selection. This is a site-wide option, so all pages on the site will inherit this style. You cannot have more than one style per site.</p>
+
+
+			<p id="menu-items"><strong>Toggle the menu:</strong></p>
+			<p>The menu in Architect 2 is defaulted off. Select ‘Architect Menu’ to toggle the menu if you have multiple pages or have added section anchors to a page.</p>
+
+			<p><strong>Footer copy</strong></p>
+			<p>You can edit the copy in the site’s footer by selecting ‘Architect Footer’ and typing in the provided text box.</p>
+
+			<p><strong>Adding menu items:</strong></p>
+			<p>You can add menu items in the ‘Menu’ section of the customizer. Click ‘Create New Menu’ and give the menu a title, then click ‘Next.’ Click ‘Add Items’ to create a new menu item. <strong>Only use ‘Custom Links’ in the Architect menu.</strong> Paste the full link to your page in the URL box, and add the link text in the box below.</p>
+
+			<img src="../assets2/menu.png" />
+
+			<p>For example: if my site name is A World Rocked, and I’m linking to a page called A Community Battle, and my publication is the Austin American-Statesman, the URL for my menu item would be ‘https://stories.usatodaynetwork.com/a-world-rocked/a-community-battle/site/statesman.com’.</p>
+
+			<div class="embed-container arch-vid"><iframe src='https://www.youtube.com/embed/4t9YxEL_GO4' frameborder="0" allowfullscreen></iframe></div>
+
+			<p>For a <a href="#section-anchor">section anchor</a>, if the site is only one page, just enter the section name you used in the editor preceded by a # (i.e., #a-reluctance-to-act). If the site has multiple pages, use the page’s full URL appended with the #section-name. (i.e., https://stories.usatodaynetwork.com/a-world-rocked/home/site/statesman.com#a-reluctance-to-act). <a href="https://gatehousenews.com/a-world-rocked/home/site/statesman.com" target="_blank">View an example here.</a></p>
+
+			<p><em>To help prevent errors in entering URLs, both those being entered in blocks and the customizer, it is recommended that you go to the page you’re linking to, copy the URL from the address bar and paste it where you’re entering it.</em></p>
+
+			<p><strong>Additional CSS:</strong></p>
+			<p>You can also add custom CSS to the site in the 'Additional CSS' section of the Customizer. This is handy if you've added any code in the 'Custom HTML' block on your page.</p>
+
+			<div class="embed-container arch-vid"><iframe src='https://www.youtube.com/embed/OLZavwqC8jA' frameborder="0" allowfullscreen></iframe></div>
+
+		</div>
+
+
+
+		<div class="leadin architect-body" id="blocks">
+
+			<h3>Blocks</h3>
+
+				<table class="block-describe">
+				  <thead class="block-head">
+				    <tr>
+				      <th scope="col">Block Name</th>
+				      <th scope="col">Description</th>
+				      <th scope="col">Sidebar Controls</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td data-label="Name">Architect Hero</td>
+				      <td data-label="Description">
+							<p>A full-width image with headline and intro text centered on top (left aligned in Architect Bold style). Begin a story with a bold visual and gripping headline, follow with the byline block before body copy.</p>
+
+							<p><em>Tip: Be mindful of how the text reads on top of the image. Check if white text or black text looks best. If it’s still too difficult to read easily, consider constructing the top of the story a different way, using the full-width image block and the headline block.</em></p></td>
+				      <td data-label="sidebar control">
+								<ul>
+									<li>Toggle Caption</li>
+									<li>Toggle Credit</li>
+									<li>Photographer Name</li>
+									<li>Publication Name</li>
+									<li>Text color</li>
+								</ul>
+							</td>
+				    </tr>
+
+						<tr>
+							<td data-label="Name">Architect Headline</td>
+							<td data-label="Description">
+							<p>A bold headline and intro text with no image.</p>
+							<p><em>Tip: Start a story with this block and no image, or with with a full-width image block, if the image is too busy for text to sit on top.</em></p></td>
+							<td data-label="sidebar control">
+
+							</td>
+						</tr>
+
+						<tr>
+						 <td data-label="Name">Architect Byline</td>
+						 <td data-label="Description">
+						 <p>Each byline block supports up to three authors. Add another byline block if you need more. The author name can be hyperlinked. Use immediately after the hero or headline blocks before body copy starts.</p></td>
+						 <td data-label="sidebar control">
+								 <ul>
+									 <li>Author Name</li>
+									 <li>Publication Name</li>
+									 <li>Byline URL</li>
+								 </ul>
+						 </td>
+					 </tr>
+
+
+					 	<tr>
+					 		<td data-label="Name">Paragraph</td>
+					 		 <td data-label="Description">
+					 				 <p>Standard body copy with a togglable drop cap. Drop caps should be used on the first paragraph of a story or a large section within the story. Pasting multiple paragraphs into the Paragraph block will automatically split each paragraph into its own block. When typing in a paragraph block, press enter/return on the keybroard to start a new block, which defaults to a Paragraph block. </p>
+									 <p><em>Tip: turn off the drop cap when editing the paragraph’s copy for a smoother experience.</em></p></td>
+			 				 <td data-label="sidebar control">
+								 <ul>
+									 <li>Toggle Drop Cap</li>
+								 </ul>
+							 </td>
+						 </tr>
+
+						 <tr>
+ 					 		<td data-label="Name">List</td>
+ 					 		 <td data-label="Description">
+ 					 				 <p>Create a bulleted or numbered list. This component sits in-well (the same width as paragraphs).</p></td>
+ 			 				 <td data-label="sidebar control">
+ 							 </td>
+ 						 </tr>
+
+						 <tr>
+							 <td data-label="Name">Architect Full-width Image</td>
+								<td data-label="Description">
+										<p>Full-width image that stretches across 100 percent of the screen. Great for breaking up large sections of text.</p>
+										<p><em>Tip: can be used with the headline block to create a story opening if the image is too busy to have text atop it.</em></p></td>
+								<td data-label="sidebar control">
+									<ul>
+										<li>Toggle Caption</li>
+										<li>Toggle Credit</li>
+										<li>Photographer Name</li>
+										<li>Publication Name</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+		 					 <td data-label="Name">Architect Single Image</td>
+		 						<td data-label="Description">
+		 								<p>A single image that sits in the well (is the same width as paragraphs).</p></td>
+		 						<td data-label="sidebar control">
+		 							<ul>
+		 								<li>Toggle Caption</li>
+		 								<li>Toggle Credit</li>
+		 								<li>Photographer Name</li>
+		 								<li>Publication Name</li>
+		 							</ul>
+		 						</td>
+		 					</tr>
+
+							<tr>
+							 <td data-label="Name">Architect Two-image Collage</td>
+								<td data-label="Description">
+										<p>Two images side-by-side that break the well (go wider than the column of paragraphs). These stack on mobile.</p></td>
+								<td data-label="sidebar control">
+									<ul>
+										<li>Toggle Caption</li>
+										<li>Toggle Credit</li>
+										<li>Photographer Name</li>
+										<li>Publication Name</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Architect Three-image Collage</td>
+								<td data-label="Description">
+										<p>Three images side-by-side that break the well (go wider than the column of paragraphs). These stack on mobile.</p></td>
+								<td data-label="sidebar control">
+									<ul>
+										<li>Toggle Caption</li>
+										<li>Toggle Credit</li>
+										<li>Photographer Name</li>
+										<li>Publication Name</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Architect Blockquote</td>
+								<td data-label="Description">
+										<p>A callout for a strong quote</p></td>
+								<td data-label="sidebar control">
+									<ul>
+										<li>Quote Attribution Name</li>
+										<li>Quote Attribution Title</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Architect Button</td>
+								<td data-label="Description">
+										<p>A simple button with customizable text. Use to link to the next story or as a call-to-action.</p></td>
+								<td data-label="sidebar control">
+									<ul>
+										<li>Button Text</li>
+										<li>Button URL</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Architect Subscribe</td>
+								<td data-label="Description">
+										<p>A section set up to promote site subscription. Embed in the story and/or at the end to promote subscription.</p></td>
+								<td data-label="sidebar control">
+									<ul>
+										<li>Subscription Copy</li>
+										<li>URL</li>
+										<li>Publication Name</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">YouTube Embed</td>
+								<td data-label="Description">
+										<p>Embed a YouTube video that sits in-well (the same width as paragraphs)</p></td>
+								<td data-label="sidebar control">
+
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Twitter Embed</td>
+								<td data-label="Description">
+										<p>Embed a tweet that sits in-well (the same width as paragraphs)</p></td>
+								<td data-label="sidebar control">
+
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Architect Section Anchor</td>
+								<td data-label="Description">
+										<p>Creates an anchor point in the story for use in the menu. <a href="#section-anchor">See more</a></p></td>
+								<td data-label="sidebar control">
+
+								</td>
+							</tr>
+
+							<tr>
+							 <td data-label="Name">Custom HTML</td>
+								<td data-label="Description">
+										<p>Insert custom HTML to the story</p>
+										<p>
+											<em>Tip: wrap all your code in </em>
+											<code>&lt;div class=”in-well"&gt;&lt;/div&gt;</code>
+											<em> to constrain your custom HTML to the width of the well</em></p></td>
+							<td data-label="sidebar control">
+
+							</td>
+						</tr>
+
+						<tr class="ads-break"><td>Architect Ad Blocks</td><td></td><td></td></tr>
+
+						<tr class="ads">
+						 <td data-label="Name">Architect Top Ad</td>
+							<td data-label="Description">
+									<p>A wide banner ad for use ONLY ONCE as the first ad on your site.</p></td>
+							<td data-label="sidebar control">
+								<ul>
+									<li>Ad tag</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr class="ads">
+						 <td data-label="Name">Architect Medium Rectangle Ad</td>
+							<td data-label="Description">
+									<p>In-well rectangle ad for use after the Top Ad</p></td>
+							<td data-label="sidebar control">
+
+							</td>
+						</tr>
+
+						<tr class="ads">
+						 <td data-label="Name">Architect Banner Ad</td>
+							<td data-label="Description">
+									<p>Banner ad for use after the Top Ad</p></td>
+							<td data-label="sidebar control">
+
+							</td>
+						</tr>
+			  	</tbody>
+				</table>
+
+				<p id="section-anchor"><strong>Section Anchor:</strong></p>
+				<img src="../assets2/anchor.png" />
+				<p>This block lets you create a point in the story that a menu item will jump to. It does not show up visually in the story. In the editor, input a section name in the sidebar textbox when you’ve selected the ‘Architect Section Anchor’ block. Place this block wherever in the story you want the menu item to scroll. See <a href="#menu-items">how to set up menu items</a> for more on section anchors.</p>
+
+				<p><em>Tip: set an Architect Section Anchor block directly above an Architect Subhead block to create links to chapters, sections or multiple stories on one page.</em></p>
+
+				</div>
+
+		<div class="leadin architect-body" id="publishing">
+
+			<h3>Publishing</h3>
+			<p><strong>Pre-publishing checklist:</strong></p>
+				<p class='checklist'><i class="far fa-check-square"></i> Copy is consistent across all versions</p>
+				<p class='checklist'><i class="far fa-check-square"></i> Full-width images look crisp</p>
+				<p class='checklist'><i class="far fa-check-square"></i> WordPress page is set to Status: Published and Visibility: Public<br><span class="italic" style="font-size:12px">(see the 'Publish' box on the top right of your page and click 'Edit' to correct any values)</span></p>
+				<p class='checklist'><i class="far fa-check-square"></i> SEO and share text has been optimized (see below)</p>
+				<p class='checklist'><i class="far fa-check-square"></i> Story file with URL override has been created in EditUI (see below)</p>
+
+			<h4>Optimizing for SEO and social</h4>
+			<p>The Architect theme includes a tool called Yoast SEO that is helpful for improving your site's search engine rank and allows you to customize the share text that appears on Facebook and Twitter.</p>
+			<p>In the WordPress editor, scroll down past the Page Builder box to see the Yoast SEO plugin.</p>
+			<img src="../assets2/yoast-snippet-edit.png">
+			<p>To ensure maximum reach on search engines, click on the 'Edit Snippet' button to make your screen look something like the image above. In the SEO title, give your page a descriptive title that includes your property's name. You will notice the length meter warns you when the title is too long.</p>
+			<p>The 'slug' should be 'home'. It's ok to change it here — it doesn't make a huge difference but users will see that link on their Google search so it's good to be descriptive.</p>
+			<p>The meta description is extremely important. Use as many descriptive, important words from your project here as possible so that search engine users can find your site. Again, pay attention to the length meter.</p>
+			<p style="font-weight: 700">Now, click on the circles-connected-by-lines button on the left side of the Yoast plugin.</p>
+			<img src="../assets2/yoast-social.png">
+			<p>Here is where you customize the text that will appear on Facebook and Twitter when someone shares the link to your site. The social networks create a 'card' with the text and image, so it's important that what you put here gives an accurate representation of your project and site.</p>
+			<p>Fill out the fields for both the Facebook and Twitter tab, and then click the big blue 'Update' button to save the changes.</p>
+
+			<hr>
+
+			<h4>Publishing on your newspaper.com site</h4>
+			<p class="body-bold">EditUI</p>
+			<p>EditUI makes it pretty easy to display your special project site on your newspaper website. Special thanks to national projects designer Rachel Kilroy for writing these instructions.</p>
+			<p><strong>Important:</strong></p>
+			<p>Architect uses a specific URL configuration in order for you to track Google Analytics. Users <span class="italic">must</span> visit your site using the following URL structure. You should use this URL structure when sharing, and you <span style="font-weight:700">must</span> use this URL as your URL override in EditUI.</p>
+
+			<p class="basicURL">http://stories.usatodaynetwork.com/[yoursitename]/[yourpagename]/site/[newspaper.com]</p>
+			<p>You'll replace the items in brackets for your specific Architect projects. In most cases, your page name will be 'home' unless you've added more pages to the site or decided to change it. We recommend you use 'home' if the site is one page and for the homepage on a multi-page series.</p>
+
+			<p>For example, if you are the Columbus Dispatch, your site name is Unmasked and you didn't change the page name from Home, your URL would be:</p>
+			<p>http://stories.usatodaynetwork.com/unmasked/home/site/dispatch.com</p>
+			<p>Keep this URL handy as we work through the EditUI directions.</p>
+			<img src="../assets2/dispatch-banner.png">
+			<p>This display on the homepage links directly to the project and allows for three related content pieces. The bar also appears on every page on your site, as a smaller one line bar.</p>
+
+			<ol>
+				<li>Create a story file in Edit UI as you normally would any other story. </li>
+				<li>Under the Edit tab, give it a Title and Net Title. (Net title will be what displays)</li>
+				<li>Add an image (caption isn’t necessary for this display feature.)</li>
+				<li>For the Story Body, add in a couple graphs that will display under the headline on the homepage. I think it gives a maximum of 3 lines. Then add in a link to the project. We just did Continue reading this story and linked that text. We do this because our mobile app doesn’t use redirects </li>
+				<img src="../assets2/edit-ui.png">
+				<li>Scroll down to the Extra Fields. At URL Override add in the full URL to your project site. (including the http)</li>
+				<li>Right under that field you will see “Breaking News Label” This is where we typed in UNMASKED | CHAPTER 4 that shows up in red at the top of the box. </li>
+				<li>Next, go to your Keywords tab and add in the Keyword “Placement>Breaking news: Enhanced” (if you just type in enhanced in the search box it will show up)</li>
+				<li>Next, go to the Connections/Statistics tab. There you’ll add the three related items that show up in the box on the homepage. They display on order based on publish time.</li>
+				<li>If you have external elements like YouTube videos, podcasts, twitter moment, twitter poll, facebook live, etc., you can just create a whole new story file and repeat steps 1-5. Basically you’re just creating a file that redirects to your external content.  If you are doing external content I’d suggest getting those files created in EditUI so you aren’t working backwards. </li>
+				<li>If you don’t have three related content items, you can just choose the keyword Placement>Breaking News and it will display as a one line bar.</li>
+			</ol>
+
+			<p>You will need to add your regular publishing taxonomies. We also recommend placing it in the carousel for maximum visibility.</p>
+
+			<h4>Content syndication and in-article links</h4>
+
+			<p>Architect contains a script that can automatically detect what newspaper site the user is directed from and append the appropriate information to the site&apos;s URL. This is especially helpful when syndicating content across several sites.</p>
+
+			<p>When doing this, links to the Architect site should contain the root domain (stories.usatodaynetwork.com), the site name and the page name followed by a slash. So, for example, if the site name is A World Rocked and we're directing users to the home page, the URL used in EditUI would be </p><p><strong>https://stories.usatodaynetwork.com/a-world-rocked/home/</strong></p> <p>On statesman.com, that page would redirect in about a second to </p><p><strong>https://stories.usatodaynetwork.com/a-world-rocked/home/site/statesman.com</strong></p><p> whereas the same link on dispatch.com would redirect to </p><p><strong>https://stories.usatodaynetwork.com/a-world-rocked/home/site/dispatch.com</strong></p></p>
+
+			<p>In-article links work as normal hyperlinking in a story, though you should use the appropriate Architect URL when doing so. If the Architect is being syndicated, use the URL structure mentioned in the paragraph above. Otherwise, use the full URL (through /site/newspaper.com) when linking to the Architect site.</p>
+
+			<p>TL;DR: always use URLs that go at least through the page slug (/home/ in the examples here) when linking to your Architect site. If you know you want a specific paper&apos;s branding and tracking associated with the stories (so, not syndicated), use the URL that goes all the way through the newspaper&apos;s domain (/home/site/newspaper.com).</p>
+
+		</div>
+
+		<div class="leadin architect-body" id="faq">
+
+			<h3>Frequently Asked Questions</h3>
+
+			<h4>What if I want to use something that is not included in the template?</h4>
+			<p>You are welcome to use the 'Custom HTML' widget that is not part of the Architect theme. We make no guarantees that HTML inserted here will work or play nicely with the Architect widgets.</p>
+
+			<h4>I'm getting a 'Sorry, we cannot find the page you are looking for' when I visit the site.</h4>
+			<img src="../assets2/publish-settings.png" style="width: 300px">
+			<p>Your WordPress page was not set to Published and Public. To change it, click on the small 'Edit' button next to Visibility and make sure it is 'Public'.</p>
+
+			<h4>Can I make the site private till I'm ready to publish in print/promote online?</h4>
+			<p>Yes. When editing a page, click on 'Visibility: Public' in the top of the document sidebar. You can set to the page to private (for only site admins and editors) or make it password protected. You'll have to do this for each page you want to not be public. Remember to change it back to public when it's time to publish/promote.</p>
+
+			<h4>What happens to projects built in Architect version 1?</h4>
+			<p>Nothing! You can still access those sites and update them if necessary. You can reference these site with the new stories.usatodaynetwork.com domain or use the original gatehousenews.com URL. The latter now redirects to the new URL, so previously published links should still work. <a href="https://despace.design/architect/arch1.html">Architect 1 documentation.</a></p>
+			<!--
+<h4>Does my Architect site live behind my publication&apos;s paywall?</h4>
+			<p>Yes. We've integrated Architect with xxxxxxxx that set it behind the paywall. Visitors get x free page views before having to subscribe to view the content.</p>-->
+
+
+
+			<p class="end">More questions? Reach out to <a href="mailto:ssmith2@gatehousemedia.com">Front-end Developer Sean Smith.</a></p>
+
+
+		</div>
+
+		<div class="indepth-popup">
+			<div class="indepth-alert">
+				<h1>Are you switching to Presto soon?</h1>
+				<p>Architect will no longer serve as the longform storytelling template once your site has transitioned to the new CMS, Presto. If your special project is slated for publication AFTER the transition, you'll need to use the legacy Gannett longform system known as In-Depth. If you&apos;re still a ways out from moving to Presto from Naviga, you can continue to use Architect for your longform stories.</p>
+				<p>Don&apos;t worry! All sites built in Architect to this point will be preserved.</p>
+				<div class="buttons">
+					<div class="to-arch">
+							I&apos;ll use Architect
+					</div>
+					<a href="in-depth.html" class="to-indepth">
+						I&apos;ll use In-Depth
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				jQuery('.to-arch').on('click', function(){
+					jQuery('.indepth-popup').remove();
+				});
+			</script>
+		</div>
+	</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="../js/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="/projects-backend/libs/scrolloverflow.js"></script>
+<script type="text/javascript" src="../js/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="../js/despace.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function(){
+			// toggle menus
+			if ($('.architect-logo').isOnScreen() == true) {
+				$('.arch-nav').css('opacity', '1');
+				$('.arch-nav2').css('opacity', '0');
+
+			} else {
+				$('.arch-nav').css('opacity', '0');
+				$('.arch-nav2').css('opacity', '1');
+			}
+	       //Add smooth scrolling to all links
+	       $("a").on('click', function(event) {
+
+	         // clicked hash link should have value
+	         if (this.hash !== "") {
+	           // Prevent default link click behavior
+	           event.preventDefault();
+
+	           // get hash value
+	           var hash = this.hash;
+
+	           // animate for smooth scroll to clicked link
+	           $('html, body').animate({
+	             scrollTop: $(hash).offset().top
+	           }, 1000, function(){
+	           });
+	         } // End if
+	       });
+	     });
+
+		$.fn.isOnScreen = function(){
+
+    var win = $(window);
+
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+	};
+
+	$(window).scroll(function(){
+		// toggle menus
+		if ($('.architect-logo').isOnScreen() == true) {
+			$('.arch-nav').css('opacity', '1');
+			$('.arch-nav2').css('opacity', '0');
+
+		} else {
+			$('.arch-nav').css('opacity', '0');
+			$('.arch-nav2').css('opacity', '1');
+		}
+
+		// animate underlines on menu 2
+		if ($('#quickStart').isOnScreen() == true) {
+			$('.arch-nav2 a').css('border-bottom', '3px solid transparent');
+			$('#quickStart2').css('border-bottom', '3px solid #0A32A0');
+		}
+		if ($('#examples').isOnScreen() == true) {
+			$('.arch-nav2 a').css('border-bottom', '3px solid transparent');
+			$('#examples2').css('border-bottom', '3px solid #0A32A0');
+		}
+		if ($('#before').isOnScreen() == true) {
+			$('.arch-nav2 a').css('border-bottom', '3px solid transparent');
+			$('#before2').css('border-bottom', '3px solid #0A32A0');
+		}
+		if ($('#blocks').isOnScreen() == true) {
+			$('.arch-nav2 a').css('border-bottom', '3px solid transparent');
+			$('#blocks2').css('border-bottom', '3px solid #0A32A0');
+	 	}
+		if ($('#publishing').isOnScreen() == true) {
+			$('.arch-nav2 a').css('border-bottom', '3px solid transparent');
+			$('#publishing2').css('border-bottom', '3px solid #0A32A0');
+	 	}
+		if ($('#faq').isOnScreen() == true) {
+			$('.arch-nav2 a').css('border-bottom', '3px solid transparent');
+			$('#faq2').css('border-bottom', '3px solid #0A32A0');
+		}
+	});
+</script>
